@@ -18,3 +18,7 @@ Route::get('/', [\App\Http\Controllers\IndexController::class, 'index'])->name('
 Route::get('/rooms', [\App\Http\Controllers\RoomsController::class, 'index'])->name('rooms');
 
 Route::get('/rooms/lux', [\App\Http\Controllers\LuxController::class, 'index'])->name('lux');
+
+Route::get('/form', [\App\Http\Controllers\FormController::class, 'index'])->name('form');
+
+Route::post('/form/submit', [\App\Http\Controllers\FormController::class, 'order_check']);

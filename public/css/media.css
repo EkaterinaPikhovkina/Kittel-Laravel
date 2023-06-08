@@ -5,10 +5,6 @@
         justify-content: center;
     }
 
-    *, :after, :before {
-        box-sizing: border-box;
-    }
-
     .site-header {
         width: 828px;
 
@@ -40,8 +36,6 @@
 
     .header-mobile-background, .menu1, .menu2, .menu3, .menu4, .left-paws, .right-paws, .image-landing {
         display: none;
-    } {
-        display: none;
     }
 
     .mobile-menu {
@@ -50,6 +44,63 @@
         height: 74px;
         top: 34px;
         left: 688px;
+
+        background: url("../storage/menu.svg");
+    }
+
+    .mobile-menu ul {
+        display: none;
+    }
+
+    .mobile-menu:hover ul{
+        position: absolute;
+        width: 828px;
+        height: 896px;
+        top: 74px;
+        right: -48px;
+        z-index: 999;
+        list-style: none;
+
+        background: #FF7D94;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-menu ul li a {
+        width: 177px;
+        height: 108px;
+
+        font-family: 'Balsamiq Sans', serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        color: #FFFFFF;
+    }
+
+    .menu-mobile-button {
+        width: 480px;
+        height: 104px;
+        margin: 79px 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: #FFFFFF;
+        border-radius: 18px;
+    }
+
+    .header-mobile {
+        font-size: 40px;
+        color: #FF7D94;
     }
 
     .main-page, .main-page2, .main-page3, .main-page4, .main-page5, .footer {
@@ -166,7 +217,7 @@
         height: 167px;
         margin-top: 50px;
 
-        background: url(/storage/quotes2.svg);
+        background: url("../storage/quotes2.svg");
     }
 
     .reviews-container {
@@ -338,7 +389,7 @@
         width: 828px;
         height: 3447px;
 
-        background: url(/storage/background2-mobile.png);
+        background: url("../storage/background2-mobile.png");
     }
 
     .page3 {

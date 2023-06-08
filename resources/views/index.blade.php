@@ -5,17 +5,19 @@
 @section('content')
     @include('partials.header')
 	<div class="main-page">
-		<img src = "{{asset('/storage/paws-landing.png')}}" class="left-paws">
-		<img src = "{{asset('/storage/paws-landing.png')}}" class="right-paws">
+		<img src = "{{asset('/storage/paws-landing.png')}}" class="left-paws" alt="">
+		<img src = "{{asset('/storage/paws-landing.png')}}" class="right-paws" alt="">
 		<div class="landing-introduction">
 			<span class="headline">Приносьте Вашу кицьку вже сьогодні, <br>а ми з любов’ю доглянемо її</span>
 			<span class="description-landing">Не хочете залишати кицю в брудній клітці? Телефонуйте прямо зараз і Ваш кіт буде жити в 5-зірковому номері з обслуговуванням.</span>
-			<div class="request-call-button">
-				<span class="request-call-text">Замовити дзвінок</span>
-			</div>
+            <a href="{{ route("form") }}">
+                <div class="request-call-button">
+				    <span class="request-call-text">Замовити дзвінок</span>
+			    </div>
+            </a>
 		</div>
-		<img src = "{{asset('/storage/cat-landing.png')}}" class="image-landing">
-        <img src = "{{asset('/storage/cat-landing-mobile.png')}}" class="image-landing-mobile">
+		<img src = "{{asset('/storage/cat-landing.png')}}" class="image-landing" alt="">
+        <img src = "{{asset('/storage/cat-landing-mobile.png')}}" class="image-landing-mobile" alt="">
 	</div>
 	<div class="main-page2">
 		<div class="reviews-container-background">
@@ -32,7 +34,7 @@
 	<div class="main-page3">
 		<span class="headline2">Обирайте будь-який комфортний <br>номер для вашого улюбленця</span>
 		<div class="room1">
-			<img src="{{asset('/storage/standart.jpg')}}">
+			<img src="{{asset('/storage/standart.jpg')}}" alt="">
 			<div class="description">
 				<p class="big-bold">Стандарт</p>
 				<p class="normal">- для одного гостя<br>
@@ -45,7 +47,7 @@
 			</div>
 		</div>
 		<div class="room2">
-			<img src="{{asset('/storage/medium.jpg')}}">
+			<img src="{{asset('/storage/medium.jpg')}}" alt="">
 			<div class="description">
 				<p class="big-bold">Медіум</p>
 				<p class="normal">- для двох гостей<br>
@@ -58,7 +60,7 @@
 			</div>
 		</div>
 		<div class="room3">
-			<img src="{{asset('/storage/lux.jpg')}}">
+			<img src="{{asset('/storage/lux.jpg')}}" alt="">
 			<div class="description">
 				<p class="big-bold">Люкс</p>
 				<p class="normal">- для двох-чотирьох гостей<br>
@@ -75,32 +77,32 @@
 		<span class="headline3">Чому в Kittel Ваш кіт
 		буде почувати себе як удома?</span>
 		<div class="advantage1">
-			<img src="{{asset('/storage/door-icon.svg')}}">
+			<img src="{{asset('/storage/door-icon.svg')}}" alt="">
 			<p class="advantage-heading">НОМЕРИ ЗІ ЗРУЧНОСТЯМИ</p>
 			<p class="advantage-description">Номери з різноманітними меблями для котів.</p>
 		</div>
 		<div class="advantage2">
-			<img src="{{asset('/storage/broom-icon.svg')}}">
+			<img src="{{asset('/storage/broom-icon.svg')}}" alt="">
 			<p class="advantage-heading">РЕТЕЛЬНЕ ПРИБИРАННЯ</p>
 			<p class="advantage-description">Прибирання та кварцевання після кожного пухнастика.</p>
 		</div>
 		<div class="advantage3">
-			<img src="{{asset('/storage/patch-icon.svg')}}">
+			<img src="{{asset('/storage/patch-icon.svg')}}" alt="">
 			<p class="advantage-heading">ПРОФЕСІЙНИЙ ВЕТЕРИНАР</p>
 			<p class="advantage-description">Кожен робітник за сумісництвом ветеринар.</p>
 		</div>
 		<div class="advantage4">
-			<img src="{{asset('/storage/grass-icon.svg')}}">
+			<img src="{{asset('/storage/grass-icon.svg')}}" alt="">
 			<p class="advantage-heading">СВІЙ МІНІ-ПАРК</p>
 			<p class="advantage-description">Кожен кіт має окрему “зелену” зону для відпочинку на свіжому повітрі.</p>
 		</div>
 		<div class="advantage5">
-			<img src="{{asset('/storage/bird-icon.svg')}}">
+			<img src="{{asset('/storage/bird-icon.svg')}}" alt="">
 			<p class="advantage-heading">БЕЗЛІЧ РОЗВАГ</p>
 			<p class="advantage-description">В готелі є атракціони, а також клітки з пташками, за якими цікаво спостерігати.</p>
 		</div>
 		<div class="advantage6">
-			<img src="{{asset('/storage/camera-icon.svg')}}">
+			<img src="{{asset('/storage/camera-icon.svg')}}" alt="">
 			<p class="advantage-heading">ТРАНСЛЯЦІЯ 24/7</p>
 			<p class="advantage-description">Ви будете мати змогу бачити свого улюбленця на стрімі в будь-який час доби.</p>
 		</div>
@@ -112,10 +114,12 @@
 			<div class="page5-mobile-button">
 				<span class="mobile-number">+38 (050) 185-50-86</span>
 			</div>
-            <img src="{{asset('/storage/button-cat.png')}}">
-			<div class="page5-request-call">
-				<span class="request-call-text">Замовити дзвінок</span>
-			</div>
+            <img src="{{asset('/storage/button-cat.png')}}" alt="">
+            <a href="{{ route("form") }}">
+                <div class="page5-request-call">
+				    <span class="request-call-text">Замовити дзвінок</span>
+			    </div>
+            </a>
 		</div>
 	</div>
     @include('partials.footer')

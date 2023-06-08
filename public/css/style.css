@@ -150,7 +150,7 @@
 	width: 1440px;
 	height: 1024px;
 
-	background: url(/storage/background.svg);
+	background: url("../storage/background.svg");
 
 	flex: none;
 	order: 0;
@@ -332,7 +332,7 @@
 	height: 154px;
 	margin-top: 73px;
 
-    background: url(/storage/quotes.svg);
+    background: url("../storage/quotes.svg");
 
 	display: flex;
 	justify-content: space-between;
@@ -676,7 +676,7 @@ a {
 	width: 1440px;
 	height: 3292px;
 
-	background: url(/storage/background2.svg);
+	background: url("../storage/background2.svg");
 
 	flex: none;
 	order: 0;
@@ -764,19 +764,19 @@ a {
 	width: 1107px;
 	height: 741px;
 
-	background: url(/storage/standart.jpg);
+	background: url("../storage/standart.jpg");
 	border-radius: 49px;
 	background-size: cover;
 }
 .page2-room2-img {
-	background: url(/storage/medium.jpg);
+	background: url("../storage/medium.jpg");
 	background-size: 100% 100%;
 
 	display: flex;
 	justify-content: center;
 }
 .page2-room3-img {
-	background: url(/storage/lux2.jpg);
+	background: url("../storage/lux2.jpg");
 
 	display: flex;
 	justify-content: flex-end;

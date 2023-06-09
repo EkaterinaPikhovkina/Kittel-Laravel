@@ -1,6 +1,6 @@
 @extends('layout.base')
 
-@section('title', 'Kittel')
+@section('title', 'Номери')
 
 @section('content')
     @include('partials.header')

@@ -5,8 +5,8 @@
 @section('content')
     @include('partials.header')
 	<div class="page2">
-		<img src = "{{asset('/storage/paws-page2.svg" class="left-paws')}}" alt="">
-		<img src = "{{asset('/storage/paws-page2.svg" class="right-paws')}}" alt="">
+		<img src = "{{asset('/storage/paws-page2.svg')}}" class="left-paws" alt="">
+		<img src = "{{asset('/storage/paws-page2.svg')}}" class="right-paws" alt="">
 		<div class="main-text-page2">
 			<div class="heading">
 				<img src="{{asset('/storage/heading-paw.svg')}}" alt="">
